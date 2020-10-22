@@ -22,13 +22,13 @@ JSON Web Token is an Internet standard for creating data with optional signature
 
 **Correct** used header example:
 
-    Authentication: Bearer &lt;token&gt;
+    Authentication: Bearer <token>
 
 **Wrong** header example:
 
-    Authentication: Token &lt;token&gt;
+    Authentication: Token <token>
     
-    Authentication: &lt;token&gt;
+    Authentication: <token>
 
 
 ## Resource naming
