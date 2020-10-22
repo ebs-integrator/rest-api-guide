@@ -125,7 +125,7 @@ Query params are used only in GET requests for filtering and pagination
 **Wrong**:
 
     DELETE /students/?id=1 - removing object by query param
-    POST /students/?name=Test&amp;group=C1000 - adding by query params
+    POST /students/?name=Test&group=C1000 - adding by query params
 
 ## Validation
 
@@ -198,7 +198,7 @@ Multilanguage
 
 ### Get a paginated list with results
 
-    GET /students?page=1&amp;page_size=10
+    GET /students?page=1&page_size=10
     
     HTTP 200 OK
     {
@@ -214,7 +214,7 @@ Multilanguage
 
 ### Get a paginated list without results
 
-    GET /students?page=1&amp;page_size=10
+    GET /students?page=1&page_size=10
     
     HTTP 200 OK
     {
@@ -224,7 +224,7 @@ Multilanguage
 
 ### Get a paginated list with additional data
 
-    GET /students?page=1&amp;page_size=10
+    GET /students?page=1&page_size=10
     
     HTTP 200 OK
     {
