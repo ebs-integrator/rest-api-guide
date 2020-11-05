@@ -45,6 +45,16 @@ Date and time with UTC offset: 2007-04-05T12:30:22+02:00
 
 _Python strptime format: %Y-%m-%dT%H:%M:%S%z_
 
+## Performance
+
+A good response time for a REST API endpoint: 
+
+- **under 100ms is acceptable**, 0.1 second is about the limit for having the user feel that the system is reacting instantaneously
+- 1.0 second is about the limit for the user's flow of thought to stay uninterrupted, even though the user will notice the delay
+- 10 seconds is about the limit for keeping the user's attention focused on the dialogue
+
+_Based on research: https://www.nngroup.com/books/usability-engineering/_
+
 ## Resource naming
 
 
