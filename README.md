@@ -16,7 +16,7 @@ Each endpoint must have a documented request body and response object
 
 ## Authentification
 
-Used authentication mechanism: JWT
+Used authentication mechanism: **JWT**
 
 JSON Web Token is an Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims. The tokens are signed either using a private secret or a public/private key.
 
@@ -30,6 +30,30 @@ JSON Web Token is an Internet standard for creating data with optional signature
     
     Authentication: <token>
 
+## Date and Time Format
+
+Recommended date format: **ISO 8601**
+
+The ISO 8601 standard is an International Standard for the representation of dates and times. This format contains date, time, and the offset from UTC, as well as the T character that designates the start of the time, for example, 2007-04-05T12:30:22-02:00. The pattern for this date and time format is YYYY-MM-DDThh:mm:ss.sTZD. 
+
+Date: 2007-04-05
+
+Date and time: 2007-04-05T12:30:22Z
+
+Date and time with UTC offset: 2007-04-05T12:30:22+02:00
+
+
+_Python strptime format: %Y-%m-%dT%H:%M:%S%z_
+
+## Performance
+
+A good response time for a REST API endpoint: 
+
+- **under 100ms is acceptable**, 0.1 second is about the limit for having the user feel that the system is reacting instantaneously
+- 1.0 second is about the limit for the user's flow of thought to stay uninterrupted, even though the user will notice the delay
+- 10 seconds is about the limit for keeping the user's attention focused on the dialogue
+
+_Based on research: https://www.nngroup.com/books/usability-engineering/_
 
 ## Resource naming
 
