@@ -14,7 +14,7 @@ Swagger must support setting of Authentication header or other custom headers re
 
 Each endpoint must have a documented request body and response object
 
-## Authentification
+## Authentication
 
 Used authentication mechanism: **JWT**
 
@@ -144,12 +144,12 @@ Query params are used only in GET requests for filtering and pagination
 
 **Correct**:
 
-    GET /students/?group=C1020
+    GET /students?group=C1020
 
 **Wrong**:
 
-    DELETE /students/?id=1 - removing object by query param
-    POST /students/?name=Test&group=C1000 - adding by query params
+    DELETE /students?id=1 - removing object by query param
+    POST /students?name=Test&group=C1000 - adding by query params
 
 ## Validation
 
@@ -328,7 +328,7 @@ Multilanguage
     
     HTTP 400 Bad request
     {
-    "detail": "Object can't be deleted because of conflict"
+        "detail": "Object can't be deleted because of conflict"
     }
 
 ### Edit an object
